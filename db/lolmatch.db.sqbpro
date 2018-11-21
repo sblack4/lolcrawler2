@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/git/lolcrawler/db/lolmatch.db" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3287"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Events"/><default_encoding codec=""/><browse_table_settings/><tab_sql><sql name="SQL 1">create view framesLengthCounts as 
+select 
+	framesLength, count(*) as matchesCounts
+from Timelines
+group by 1
+order by framesLength asc </sql><current_tab id="0"/></tab_sql></tab_browse></sqlb_project>
